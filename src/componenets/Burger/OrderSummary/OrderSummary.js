@@ -11,6 +11,9 @@ const ordersummary = props => {
   });
   return (
     <React.Fragment>
+      <p style={{ textAlign: "center" }}>
+        Current Price : {props.price.toFixed(2)}
+      </p>
       <h3>Your Order</h3>
       <p>A delicious buerger wuth following ingredients:</p>
       <ul>{ordersummaryingredient}</ul>
